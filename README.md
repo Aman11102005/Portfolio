@@ -11,7 +11,7 @@ Welcome to the Portfolio repository! This project showcases a personal portfolio
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+
 
 ## About
 
@@ -39,14 +39,16 @@ To run this portfolio locally:
    git clone https://github.com/Aman11102005/Portfolio.git
    
 2. Navigate to the project directory:
+   ```bash
    cd Portfolio
 
 3. Open index.html in your preferred web browser.
 
 ## Usage
- • Customize the content in the HTML and CSS files to update your personal information, skills, and projects.
- • Add new projects by editing the Projects section.
- • Deploy the website using GitHub Pages or any web hosting service.
+
+- Customize the content in the HTML and CSS files to update your personal information, skills, and projects.
+- Add new projects by editing the Projects section.
+- Deploy the website using GitHub Pages or any web hosting service.
 
 ## Contributing
 
