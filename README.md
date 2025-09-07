@@ -42,7 +42,7 @@ To run this portfolio locally:
    ```bash
    cd Portfolio
 
-3. Open index.html in your preferred web browser.
+3. Open `index.html` in your preferred web browser.
 
 ## Usage
 
