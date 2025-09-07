@@ -29,7 +29,6 @@ This portfolio website is created to highlight professional experience, projects
 - HTML5
 - CSS3
 - JavaScript
-- [Any frameworks or libraries used, e.g., React, Bootstrap] *(Add if applicable)*
 
 ## Installation
 
@@ -38,3 +37,20 @@ To run this portfolio locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Aman11102005/Portfolio.git
+   
+2. Navigate to the project directory:
+   cd Portfolio
+
+3. Open index.html in your preferred web browser.
+
+## Usage
+ • Customize the content in the HTML and CSS files to update your personal information, skills, and projects.
+ • Add new projects by editing the Projects section.
+ • Deploy the website using GitHub Pages or any web hosting service.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests for improvements or bug fixes.
+
+## License
+This project is licensed under the MIT License.
