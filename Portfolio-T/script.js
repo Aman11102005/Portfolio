@@ -1,3 +1,16 @@
+function sendEmail(){
+    const templateParams = {
+        name: document.querySelector("#name").value,
+        email: document.querySelector("#email").value,
+        number: document.querySelector("#number").value,
+        subject: document.querySelector("#subject").value,
+        message: document.querySelector("#message").value,
+    };
+    emailjs.send("service_z4k87ge","template_mek1vha",templateParams)
+    .then(()=>alert("Email Sent Successfully!"))
+    .catch(() => alert("Failed to send email. Please try again."));
+} 
+
 let menuIcon=document.querySelector('#menu-icon');
 let navbar=document.querySelector('.navbar');
 
@@ -50,3 +63,4 @@ const typed = new Typed('.multiple-text',{
     backDelay:1000,
     loop:true
 });
+

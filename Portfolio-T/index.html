@@ -10,6 +10,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ONTWSnCpqRoT3T_PK"
+      });
+   })();
+</script>
   </head>
 
   <body>
@@ -355,8 +365,7 @@
           <div class="portfolio-content">
             <h3>MovieShow</h3>
             <p>
-              A responsive web application for booking movies with a clean and
-              user-friendly interface
+                Online movie ticket booking system for seamless seat selection, secure payments, and instant ticket confirmation.
             </p>
             <div class="tech-stack">
               <div class="tech">React</div>
@@ -391,8 +400,7 @@
           <div class="portfolio-content">
             <h3>Wonderlust</h3>
             <p>
-              A full-stack web application employing MVC architecture using
-              Node.js, Express, EJS templates, and modular routing
+              An online platform for discovering and booking resorts with real-time availability, secure payments, and user reviews.
             </p>
             <div class="tech-stack">
               <div class="tech">HTML</div>
@@ -431,7 +439,7 @@
             <h3>Tic Tac Toe</h3>
             <p>
               A responsive game with full game-flow logic (player turns,
-              win/draw detection)
+                win/draw detection), interactive UI updates, sound effects, and a scoreboard to track player performance.
             </p>
             <div class="tech-stack">
               <div class="tech">HTML</div>
@@ -510,29 +518,33 @@
 
       <form action="#" name="submit-to-google-sheet">
         <div class="input-box">
-          <input type="text" name="Name" placeholder="Full Name" />
+          <input type="text" name="name" id="name" placeholder="Full Name" />
           <input
             type="email"
-            name="Email Address"
+            name="email"
+            id="email"
             placeholder="Email Address"
           />
         </div>
         <div class="input-box">
           <input
             type="number"
-            name="Mobile Number"
+            name="number"
+            id="number"
             placeholder="Mobile Number"
           />
-          <input type="text" name="Email Subject" placeholder="Email Subject" />
+          <input type="text" name="subject" id="subject" placeholder="Email Subject" />
         </div>
         <textarea
-          name="Your Message"
-          id=""
+          name="message"
+          id="message"
           cols="30"
           rows="8"
           placeholder="Your Message"
         ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        <button type="button" onclick="sendEmail()" class="btn">Send Message
+        </button>
+        <!-- <input type="submit" onclick="sendMail()" value="Send Message" class="btn" /> -->
       </form>
       <span id="msg"></span>
     </section>
@@ -606,6 +618,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
